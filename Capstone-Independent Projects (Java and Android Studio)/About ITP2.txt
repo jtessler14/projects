@@ -1,0 +1,6 @@
+About ITP 2
+
+- I created an application using Android Studio that grabs the current time and displays a message depending on the current time.
+
+- The message will display "Good Morning" if the time is between 5:45 am and 11:59:59 am, 
+"Good Afternoon" if the time is between 12:00 pm and 05:59:59 pm, and "Good Evening" if the time is between 6:00 pm and 05:44:59 am

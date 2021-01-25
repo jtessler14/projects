@@ -1,0 +1,9 @@
+About ITP 3
+
+- I created an application using Android Studio that functions as a basic calculator with buttons and a display
+
+- This isn't an ordinary calculator though. If the characters in ones username (displayed below the calc.) are even, then only the even
+buttons are displayed. If the characters are odd, then only the odd numbers are displayed.
+
+- If the username starts with a letter A through M, the addition and division buttons will be shown but the subtraction and multiplication 
+buttons will not be shown. Vice versa for letters N through Z.

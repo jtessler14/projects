@@ -1,0 +1,12 @@
+About ITP 4
+
+- I created an application using Android Studio that returns a parsed JSON response
+
+- A user enters a number. When the user clicks the "Translate" button, it grabs the current number that the user inputed and sends a POST
+request to the magic number generator API that is used. 
+
+- The API has two parameters:
+1. My Team number, which is hardcoded
+2. The number that is inputted by the user
+
+- The API then returns a JSON response that is parsed
