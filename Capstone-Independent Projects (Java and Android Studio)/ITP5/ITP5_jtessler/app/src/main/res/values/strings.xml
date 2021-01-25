@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ITP5_jtessler</string>
+    <string name="edit_message">Enter a number</string>
+    <string name="button_translate">Translate</string>
+</resources>
