@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Confirm"
+    android:background="@drawable/gradient">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/profilePicture"
+        android:weightSum="2"
+        android:id="@+id/layout_text0"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_text0"
+        android:weightSum="2"
+        android:id="@+id/layout_text"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:src="@drawable/ic_name"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Name"
+            android:gravity="center"
+            android:id="@+id/name"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="#E93B3B"
+            android:textAlignment="center"
+            android:background="@drawable/bt_edit"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_text"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout2">
+
+        <ImageView
+            android:src="@drawable/ic_email"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="Email"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bt_edit"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#E93B3B"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout2"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:id="@id/linearlayout3">
+
+        <ImageView
+            android:src="@drawable/ic_dob"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Please put your DOB (YYYY-MM-DD)"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bt_edit"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColorHint="#E93B3B"
+            android:textColor="#E93B3B"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout3"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout4">
+
+        <ImageView
+            android:src="@drawable/ic_height"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/Height"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="20dp"
+            android:hint="Please put your height in Inches"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_edit"
+            android:textAlignment="center"
+            android:textColorHint="#E93B3B"
+            android:textColor="#E93B3B"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout4"
+        android:id="@+id/linearlayout6"
+        android:weightSum="2"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:src="@drawable/ic_weight"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Please put your weight in lbs"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_edit"
+            android:textAlignment="center"
+            android:textColorHint="#E93B3B"
+            android:textColor="#E93B3B"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout6"
+        android:weightSum="2"
+        android:id="@+id/layout_textfName"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/fname"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:alpha="0.0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_textfName"
+        android:weightSum="2"
+        android:id="@+id/layout_textlName"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/lname"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:alpha="0.0"/>
+
+
+    </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="650dp"
+            android:text="Confirm" />
+
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Timer"
+    android:background="@drawable/gradient">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:textColor="#E93B3B"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:id="@+id/countdown"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ImageButton
+        android:id="@+id/startbtn_timer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_start"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/countdown"/>
+
+
+    <ImageButton
+        android:id="@+id/stopbtn_timer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="445dp"
+        android:background="@drawable/round_button"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_stopword"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/timerbttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="683dp"
+        android:text="Timer"
+        android:layout_marginLeft="120dp"/>
+
+    <Button
+        android:id="@+id/stopwatchbttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="683dp"
+        android:text="Stopwatch"
+        android:layout_marginLeft="210dp" />
+
+    <EditText
+        android:id="@+id/edit_text_input"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/bt_edit"
+        android:hint="Minutes"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textAlignment="center"
+        android:textColor="#E93B3B"
+        android:textColorHint="#E93B3B"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <!--<Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="-29dp"
+        tools:layout_editor_absoluteY="93dp" /> -->
+
+    <Button
+        android:id="@+id/button_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        android:layout_marginTop="193dp"
+        android:layout_marginLeft="230dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <TextView
+        android:id="@+id/email_t"
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:textColor="#E93B3B"
+        android:alpha="0.0"/>
+
+    <ListView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="700dp"
+        android:id="@+id/userID_t"
+        android:alpha="0.0"/>
+
+</RelativeLayout>

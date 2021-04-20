@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".HomePage"
+    android:background="@drawable/gradient"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/horizontalbar">
+
+        <LinearLayout
+            android:id="@+id/layoutToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="60dp"
+                android:layout_marginTop="10sp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:onClick="OnProfile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_weight="1"
+                android:text="Prowess"
+                android:textColor="#E3E3E3"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/email_hp"
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:textColor="#E93B3B"
+        android:alpha="0.0"
+        />
+
+    <TextView
+        android:id="@+id/WorkoutPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="115dp"
+        android:text="Today's Workout Plan"
+        android:textColor="#E93B3B"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/defaultdate"
+        android:text="Today's Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="120dp"
+        android:textSize="30sp"
+        android:textColor="#E93B3B"
+        android:alpha="0.0"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="460dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="20dp">
+
+
+                    <ImageButton
+                        android:id="@+id/notepad"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:onClick="OnExercise"
+                        app:srcCompat="@drawable/notepad" />
+
+                    <ImageButton
+                        android:id="@+id/recommended"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        app:srcCompat="@drawable/recommended"
+                        android:onClick="OnRecommended"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/tutorials"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        app:srcCompat="@drawable/tutorials"
+                        android:onClick="OnTutorials"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/stretching"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        app:srcCompat="@drawable/stretching"
+                        android:onClick="OnStretch"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/running"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        app:srcCompat="@drawable/running"
+                        android:onClick="OnRunning"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/timer"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        app:srcCompat="@drawable/timer"
+                        android:onClick="OnTimer"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        app:srcCompat="@drawable/map"
+                        android:onClick="OnGymFinder"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        app:srcCompat="@drawable/weight"
+                        android:onClick="OnWeight"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/calorie"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        app:srcCompat="@drawable/calorie"
+                        android:onClick="OnCalorie"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/water"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        app:srcCompat="@drawable/water"
+                        android:onClick="OnWater"
+                        />
+                </LinearLayout>
+            </ScrollView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/WorkoutPlan">
+
+        <TableRow
+            android:id="@+id/labels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewWorkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workout"
+                android:layout_marginLeft="50dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#E93B3B"/>
+
+            <TextView
+                android:id="@+id/textViewWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:layout_marginLeft="-20dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#E93B3B"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:id="@+id/info1">
+
+
+            <ListView
+                android:id="@+id/spinnerWorkout1"
+                android:layout_width="305dp"
+                android:layout_height="250dp"
+                android:layout_marginLeft="6dp"
+                android:ems="1"
+                android:hint="Weight"
+                android:inputType="number"
+                android:textColor="#E93B3B"
+                android:textColorHint="#E93B3B"/>
+
+            <ListView
+                android:id="@+id/editWeight1"
+                android:layout_width="50dp"
+                android:layout_height="250dp"
+                android:layout_marginLeft="20dp"
+                android:ems="1"
+                android:hint="Weight"
+                android:inputType="number"
+                android:textColor="#E93B3B"
+                android:textColorHint="#E93B3B" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</ScrollView>

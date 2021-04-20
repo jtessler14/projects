@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Recommended Workouts"
+            android:padding="25dp"
+            android:textSize="30dp"
+            android:textColor="#E93B3B"/>
+
+        <ListView
+            android:id="@+id/lvExercises"
+            android:layout_width="match_parent"
+            android:layout_height="595dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/email_re"
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:textColor="#E93B3B"
+        android:alpha="0.0"/>
+
+    <ListView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="700dp"
+        android:id="@+id/userID_re"
+        android:alpha="0.0"/>
+
+    <ListView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="700dp"
+        android:id="@+id/goalID"
+        android:alpha="0.0"/>
+
+
+
+</RelativeLayout>

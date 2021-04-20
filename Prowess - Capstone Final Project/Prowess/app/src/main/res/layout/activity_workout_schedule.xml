@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutSchedule"
+    android:background="@drawable/gradient">
+
+
+    <TextView
+        android:id="@+id/todaystdate"
+        android:text="Today's Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:alpha="0.0"/>
+
+    <TextView
+        android:id="@+id/email_ws"
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:textColor="#E93B3B"
+        android:alpha="0.0"/>
+
+
+
+    <TextView
+        android:id="@+id/workoutscheduletitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout Schedule"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="40sp"
+        android:textColor="#E93B3B"/>
+
+    <ScrollView
+        android:id="@+id/scrollWS"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dip"
+        android:scrollbarStyle="outsideInset"
+        android:fillViewport="true">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_marginTop="5dip">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="180dp">
+
+                <TableRow
+                    android:id="@+id/labels"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewWorkout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Workout"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="#E93B3B"/>
+
+                    <TextView
+                        android:id="@+id/textViewWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+                        android:layout_marginLeft="-20dp"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="#E93B3B"/>
+
+                    <TextView
+                        android:id="@+id/textViewReps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reps"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="#E93B3B"/>
+
+                    <TextView
+                        android:id="@+id/textViewSets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sets"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="#E93B3B"/>
+
+                    <TextView
+                        android:id="@+id/textViewMaxWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max. Weight"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="#E93B3B"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/info1">
+
+
+                    <ListView
+                        android:id="@+id/spinnerWorkout1"
+                        android:layout_width="305dp"
+                        android:layout_height="309dp"
+                        android:layout_marginLeft="6dp"
+                        android:ems="1"
+                        android:hint="Weight"
+                        android:inputType="number"
+                        android:textColor="#E93B3B"
+                        android:textColorHint="#E93B3B" />
+
+                    <ListView
+                        android:id="@+id/editWeight1"
+                        android:layout_width="50dp"
+                        android:layout_height="309dp"
+                        android:layout_marginLeft="20dp"
+                        android:ems="1"
+                        android:hint="Weight"
+                        android:inputType="number"
+                        android:textColor="#E93B3B"
+                        android:textColorHint="#E93B3B" />
+
+                    <ListView
+                        android:id="@+id/editTextReps1"
+                        android:layout_width="50dp"
+                        android:layout_height="309dp"
+                        android:layout_marginLeft="40dp"
+                        android:ems="1"
+                        android:hint="Weight"
+                        android:inputType="number"
+                        android:textColor="#E93B3B"
+                        android:textColorHint="#E93B3B" />
+
+                    <ListView
+                        android:id="@+id/editTextSets1"
+                        android:layout_width="50dp"
+                        android:layout_height="309dp"
+                        android:layout_marginLeft="35dp"
+                        android:ems="1"
+                        android:hint="Weight"
+                        android:inputType="number"
+                        android:textColor="#E93B3B"
+                        android:textColorHint="#E93B3B" />
+
+                    <ListView
+                        android:id="@+id/editTextMaxWeight1"
+                        android:layout_width="50dp"
+                        android:layout_height="309dp"
+                        android:layout_marginLeft="75dp"
+                        android:ems="1"
+                        android:hint="Weight"
+                        android:inputType="number"
+                        android:textColor="#E93B3B"
+                        android:textColorHint="#E93B3B" />
+                </TableRow>
+
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <ImageButton
+        android:src="@drawable/ic_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/update" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/defaultdate"
+        android:text="Today's Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="120dp"
+        android:textSize="30sp"
+        android:textColor="#E93B3B"/>
+
+
+
+</RelativeLayout>

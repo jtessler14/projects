@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stopwatch"
+    android:background="@drawable/gradient">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format="00:00:00"
+        android:textColor="#E93B3B"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageButton
+        android:id="@+id/startbtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_play"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/chronometer" />
+
+    <ImageButton
+        android:id="@+id/stopbtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_stopbttn"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="445dp"
+        android:layout_alignParentTop="true"
+        android:onClick="OnStop"/>
+
+
+    <Button
+        android:id="@+id/timerbttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timer"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="683dp"
+        android:layout_marginLeft="120dp"/>
+
+    <Button
+        android:id="@+id/stopwatchbttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stopwatch"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="683dp"
+        android:layout_marginLeft="210dp" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/email_sw"
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:textColor="#E93B3B"
+        android:alpha="0.0"/>
+
+    <ListView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="700dp"
+        android:id="@+id/userID_sw"
+        android:alpha="0.0"/>
+
+
+</RelativeLayout>

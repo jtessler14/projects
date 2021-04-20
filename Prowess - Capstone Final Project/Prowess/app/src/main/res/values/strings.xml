@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Prowess</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblAcc">Select Body Focus</string>
+    <string name="lblSubAcc">Select Stretch</string>
+
+    <string-array name="acc_type">
+        <item>Legs</item>
+        <item>Back</item>
+        <item>Arms</item>
+        <item>Full Body</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_map__gym">Map</string>
+    <string name="title_activity_gym__map">Map</string>
+    <string name="title_activity_gym_map">Map</string>
+    <string name="ExerciseLog">Exercise Log</string>
+    <string name="RecommednedExercises">Recommended Exercises</string>
+    <string name="Tutorials">Tutorials</string>
+    <string name="Stretching">Stretching</string>
+    <string name="RunTracker">Run Tracker</string>
+    <string name="Timer_StopWatch"><![CDATA[Timer & Stopwatch]]></string>
+    <string name="GymFinder">Gym Finder</string>
+    <string name="HealthTrackers">Health Trackers</string>
+    <string name="WeightTracker">Weight Tracker</string>
+    <string name="CalorieTracker">Calorie Tracker</string>
+    <string name="WaterTracker">Water Tracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Home">Home</string>
+    <string name="title_activity_new_nav">NewNav</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_nav_test">NavTes</string>
+    <string name="title_activity_nav_tes">NavTest</string>
+    <string name="title_activity_new_home_page">NewHomePage</string>
+</resources>

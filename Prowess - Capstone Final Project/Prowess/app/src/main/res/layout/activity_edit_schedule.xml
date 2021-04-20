@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditSchedule"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/defaultdate"
+        android:text="Today's Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="120dp"
+        android:textSize="30sp"
+        android:textColor="#E93B3B"/>
+
+    <TextView
+        android:id="@+id/todaystdate"
+        android:text="Today's Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:alpha="0.0"/>
+
+    <TextView
+        android:id="@+id/workoutscheduletitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout Schedule"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="40sp"
+        android:textColor="#E93B3B"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp">
+
+        <TableRow
+            android:id="@+id/labels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewWorkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workout"
+                android:layout_marginLeft="0dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#E93B3B"/>
+
+            <TextView
+                android:id="@+id/textViewWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#E93B3B"/>
+
+            <TextView
+                android:id="@+id/textViewReps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reps"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#E93B3B"/>
+
+            <TextView
+                android:id="@+id/textViewSets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sets"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#E93B3B"/>
+
+            <TextView
+                android:id="@+id/textViewMaxWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max. Weight"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#E93B3B"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:id="@+id/info1">
+
+
+            <Spinner
+                android:id="@+id/spinnerWorkout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editWeight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextReps1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Reps"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextSets1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Sets"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextMaxWeight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Max. Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/info2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp" >
+
+
+            <Spinner
+                android:id="@+id/spinnerWorkout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editWeight2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextReps2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Reps"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextSets2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Sets"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextMaxWeight2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Max. Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/info3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp" >
+
+
+            <Spinner
+                android:id="@+id/spinnerWorkout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editWeight3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextReps3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Reps"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextSets3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:ems="1"
+                android:hint="Sets"
+                android:inputType="number"
+                android:textColor="#E93B3B"
+                android:textColorHint="#E93B3B" />
+
+            <EditText
+                android:id="@+id/editTextMaxWeight3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Max. Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/info4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp" >
+
+
+            <Spinner
+                android:id="@+id/spinnerWorkout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editWeight4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextReps4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Reps"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextSets4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Sets"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextMaxWeight4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Max. Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/info5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp">
+
+
+            <Spinner
+                android:id="@+id/spinnerWorkout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editWeight5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextReps5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Reps"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextSets5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Sets"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextMaxWeight5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Max. Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/info6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp" >
+
+
+            <Spinner
+                android:id="@+id/spinnerWorkout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editWeight6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextReps6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Reps"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextSets6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Sets"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextMaxWeight6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Max. Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/info7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp" >
+
+
+            <Spinner
+                android:id="@+id/spinnerWorkout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editWeight7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextReps7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Reps"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextSets7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Sets"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+
+            <EditText
+                android:id="@+id/editTextMaxWeight7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:layout_marginLeft="6dp"
+                android:inputType="number"
+                android:hint="Max. Weight"
+                android:textColorHint="#E93B3B"
+                android:textColor="#E93B3B"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/workout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Workout!"
+        android:layout_marginTop="650dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:src="@drawable/ic_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/cancel" />
+
+    <ListView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="700dp"
+        android:id="@+id/userID"
+        android:alpha="0.0"/>
+
+    <TextView
+        android:id="@+id/email_ews"
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:textColor="#E93B3B"
+        android:alpha="0.0"/>
+
+
+
+</RelativeLayout>

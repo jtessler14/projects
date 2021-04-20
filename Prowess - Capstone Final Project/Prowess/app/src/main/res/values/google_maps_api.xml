@@ -1,0 +1,26 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=FB:F5:5E:22:45:3D:33:E3:15:5C:A1:19:25:70:20:88:F5:E6:88:E1%3Bcom.example.runtracker
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.example.runtracker
+
+    SHA-1 certificate fingerprint:
+    FB:F5:5E:22:45:3D:33:E3:15:5C:A1:19:25:70:20:88:F5:E6:88:E1
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA6mNhZK70Rywp393gkkfGOkruwsdBoOjM
+</string>
+
+</resources>
